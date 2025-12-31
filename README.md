@@ -38,8 +38,13 @@ The confusion matrix of the final model is as:
 ## Structural Alignment (Stacking)
 To confirm the reliability of the model, active conformations were aligned. Approximately **87% of compounds** were identified in a similar spatial manner, confirming the hypothesis.
 
+![Validation Results](images/OutputPH4.png)
+
+*Figure 2: Performance results showing hits ranked by RMSD and EC50 values.*
+
 ![Stacked Conformations](images/Stacked_Final.png)
-*Figure 2: Overlaid conformations of active hits aligned with the 3D pharmacophore hypothesis.*
+
+*Figure 3: Overlaid conformations of active hits aligned with the 3D pharmacophore hypothesis.*
 
 ## Toxicity Prediction: Unknown Data
 The model was used to predict the hERG liability of an unknown dataset. Two significant hits were identified:
@@ -50,7 +55,8 @@ The model was used to predict the hERG liability of an unknown dataset. Two sign
 | **Mol 7** | 28 | 0.3949 | **Rejected** (hERG Liability) |
 
 ![Unknown Set Hits](images/Val_output.png)
-*Figure 3: Prediction hits identified from the unknown data set.*
+
+*Figure 4: Prediction hits identified from the unknown data set.*
 
 ## Conclusion
 Molecules/Hits 1 and 7 were declared disqualified for the next phases of virtual screening, as the models were developed for an anti-target hERG. The hit for the model implies that these are active substrate for hERG, so should not become a drug as per FDA standards. Because when they dissolve in blood stream, will react with hERG channels resulting in Torsades de-pointes (TdP) i.e., prolonged QT syndrome, and causes sudden cardiac arrest Therefore, mol 1 and 7 are rejected in this phase.
